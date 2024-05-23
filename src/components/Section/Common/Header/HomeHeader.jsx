@@ -134,7 +134,7 @@ const HomeHeader = ({ logoSrc, roundedBtn }) => {
       <div className="container">
         <nav className="navbar site-navbar">
           <BrandLogo imageSrc={logoSrc} />
-          <div className="menu-block-wrapper">
+          {/* <div className="menu-block-wrapper">
             <div className="menu-overlay"></div>
             <nav
               className={`menu-block ${isActive ? "active" : ""}`}
@@ -397,23 +397,13 @@ const HomeHeader = ({ logoSrc, roundedBtn }) => {
                 </li>
               </ul>
             </nav>
-          </div>
+          </div> */}
 
           <div className="header-btn header-btn-l1 ms-auto d-none d-xs-inline-flex">
-            <div className="zubuz-header-btn-wrap">
-              <Link className="zubuz-login-btn" href="sign-in">
-                Login
-              </Link>
-            </div>
-            <Link
-              className={` ${
-                roundedBtn
-                  ? "zubuz-default-btn zubuz-header-btn pill"
-                  : "zubuz-default-btn zubuz-header-btn"
-              }`}
-              href="contact-us"
+            <Link href="sign-in"
+              className="zubuz-default-btn zubuz-header-btn pill"
             >
-              <span>Get Started</span>
+              <span>Login</span>
             </Link>
           </div>
           <div

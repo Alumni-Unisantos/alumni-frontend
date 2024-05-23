@@ -20,10 +20,6 @@ const FooterTwo = () => {
                 <Link href="/">
                   <img src="/images/logo/logo-dark.svg" alt="" />
                 </Link>
-                <p>
-                  We're your innovation partner, delivering cutting-edge
-                  solutions that elevate your business to the next level.
-                </p>
                 <div className="zubuz-social-icon social-box">
                   <ul>
                     <li>
@@ -50,7 +46,7 @@ const FooterTwo = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-3 col-md-4">
+            {/* <div className="col-xl-3 col-md-4">
               <div className="zubuz-footer-menu extar-margin">
                 <div className="zubuz-footer-title">
                   <p>Navigation</p>
@@ -73,8 +69,8 @@ const FooterTwo = () => {
                   </li>
                 </ul>
               </div>
-            </div>
-            <div className="col-xl-2 col-md-4">
+            </div> */}
+            {/* <div className="col-xl-2 col-md-4">
               <div className="zubuz-footer-menu">
                 <div className="zubuz-footer-title">
                   <p>Utility pages</p>
@@ -97,8 +93,8 @@ const FooterTwo = () => {
                   </li>
                 </ul>
               </div>
-            </div>
-            <div className="col-xl-3 col-md-4">
+            </div> */}
+            {/* <div className="col-xl-3 col-md-4">
               <div className="zubuz-footer-menu extar-margin">
                 <div className="zubuz-footer-title">
                   <p>Resources</p>
@@ -121,12 +117,12 @@ const FooterTwo = () => {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="zubuz-footer-bottom center">
           <div className="zubuz-copywright">
-            <p> &copy;Copyright 2024, All Rights Reserved by Mthemeus</p>
+            <p> &copy;Copyright 2024 </p>
           </div>
         </div>
       </div>

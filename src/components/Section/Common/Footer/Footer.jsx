@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <footer className="zubuz-footer-section main-footer white-bg">
       <div className="container">
-        <div className="zubuz-footer-top">
+        {/* <div className="zubuz-footer-top">
           <div className="row">
             <div className="col-xl-4 col-lg-12">
               <div className="zubuz-footer-textarea">
@@ -111,7 +111,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="zubuz-footer-bottom">
           <div className="zubuz-social-icon order-md-2">
             <ul>
@@ -135,15 +135,10 @@ const Footer = () => {
                   <FaLinkedin />
                 </a>
               </li>
-              <li>
-                <a href="https://github.com/" target="_blank">
-                  <FaGithub />
-                </a>
-              </li>
             </ul>
           </div>
           <div className="zubuz-copywright">
-            <p> &copy;Copyright 2024, All Rights Reserved by Mthemeus</p>
+            <p> &copy;Copyright 2024</p>
           </div>
         </div>
       </div>

@@ -114,7 +114,7 @@ const Header = ({ logoSrc }) => {
       <div className="container">
         <nav className="navbar site-navbar">
           <BrandLogo imageSrc="/images/logo/logo-white.svg" />
-          <div className="menu-block-wrapper">
+          {/* <div className="menu-block-wrapper">
             <div className="menu-overlay"></div>
             <nav
               className={`menu-block ${isActive ? "active" : ""}`}
@@ -381,7 +381,7 @@ const Header = ({ logoSrc }) => {
                 </li>
               </ul>
             </nav>
-          </div>
+          </div> */}
 
           <div className="header-btn header-btn-l1 ms-auto d-none d-xs-inline-flex">
             <div className="zubuz-header-btn-wrap">
@@ -389,12 +389,6 @@ const Header = ({ logoSrc }) => {
                 Login
               </Link>
             </div>
-            <Link
-              className="zubuz-default-btn zubuz-header-btn"
-              href="contact-us"
-            >
-              <span>Get Started</span>
-            </Link>
           </div>
           <div
             className="mobile-menu-trigger light"
