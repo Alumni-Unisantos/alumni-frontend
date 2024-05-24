@@ -406,12 +406,12 @@ const HomeHeader = ({ logoSrc, roundedBtn }) => {
               <span>Login</span>
             </Link>
           </div>
-          <div
+          {/* <div
             className="mobile-menu-trigger light"
             onClick={menuTriggerClickHandler}
           >
             <span></span>
-          </div>
+          </div> */}
         </nav>
       </div>
     </header>

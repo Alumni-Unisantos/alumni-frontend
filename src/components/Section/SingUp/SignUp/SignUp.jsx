@@ -35,7 +35,7 @@ const SignUpForm = () => {
                 <input type="text" placeholder="Informe o número de CPF" />
               </div>
               <div className="zubuz-account-field col">
-                <label>Conclusão do Curso</label>
+                <label>Ano de Curso</label>
                 <input type="text" placeholder="Informe o ano de conclusão" />
               </div>
             </div>

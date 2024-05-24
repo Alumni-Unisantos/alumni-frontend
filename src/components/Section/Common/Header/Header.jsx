@@ -390,12 +390,12 @@ const Header = ({ logoSrc }) => {
               </Link>
             </div>
           </div>
-          <div
+          {/* <div
             className="mobile-menu-trigger light"
             onClick={menuTriggerClickHandler}
           >
             <span></span>
-          </div>
+          </div> */}
         </nav>
       </div>
     </header>

@@ -400,19 +400,13 @@ const HomeHeaderTwo = ({ logoSrc }) => {
                 Login
               </Link>
             </div>
-            <Link
-              className="zubuz-default-btn zubuz-header-btn pill"
-              href="contact-us"
-            >
-              <span>Get Started</span>
-            </Link>
           </div>
-          <div
+          {/* <div
             className="mobile-menu-trigger light"
             onClick={menuTriggerClickHandler}
           >
             <span></span>
-          </div>
+          </div> */}
         </nav>
       </div>
     </header>
