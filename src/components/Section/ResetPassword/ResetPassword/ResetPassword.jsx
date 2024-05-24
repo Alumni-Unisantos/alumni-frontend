@@ -11,10 +11,6 @@ const ResetPasswordForm = () => {
               <label>E-mail</label>
               <input type="email" placeholder="informe seu e-mail" />
             </div>
-            <div className="zubuz-account-field">
-              <label>Senha</label>
-              <input type="password" placeholder="Informe sua senha" />
-            </div>
             <button id="zubuz-account-btn" type="submit">
               <span>Alterar senha</span>
             </button>
