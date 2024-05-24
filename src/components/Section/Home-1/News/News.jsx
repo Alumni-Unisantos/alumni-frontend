@@ -21,7 +21,7 @@ const NewsSection = () => {
     <div className="section zubuz-section-padding2 light-bg">
       <div className="container">
         <div className="zubuz-section-title center">
-          <h2>We've earned a 4.8-star Trustpilot rating</h2>
+          <h2>What is Lorem Ipsum?</h2>
         </div>
         <div className="row">
           {blogDatas?.map((blog, index) => (
