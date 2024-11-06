@@ -28,7 +28,7 @@ jobs:
         run: npm run export
 
       - name: Upload to Locaweb FTP
-        uses: sebastianpopp/ftp-action@v1.0.1
+        uses: sebastianpopp/ftp-action@releases/v2
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
