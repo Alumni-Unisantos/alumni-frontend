@@ -33,4 +33,5 @@ jobs:
           localDir: ./dist
           remoteDir: /public_html
           forceSsl: false
+          options: "--verbose"
 
