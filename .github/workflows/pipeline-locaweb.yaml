@@ -24,11 +24,13 @@ jobs:
       - name: Build the application
         run: npm run build
 
-      - name: Upload to Locaweb FTP
+      - name: Deploy para Locaweb via FTP
         uses: sebastianpopp/ftp-action@releases/v2
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
+          host: ${{ secrets.FTP_HOST }}
+          user: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          localDir: './dist'       # Diretório de build estático
-          remote-dir: '/public_html'  # Caminho do diretório remoto na Locaweb
+          localDir: ./dist
+          remoteDir: /public_html
+          forceSsl: false
+
