@@ -20,7 +20,7 @@ const TestimonialSection = ({ button = "true" }) => {
     <div className="section zubuz-section-padding2 light-bg">
       <div className="container">
         <div className="zubuz-section-title center">
-          <h2>What is Lorem Ipsum?</h2>
+          <h2>Depoimentos</h2>
         </div>
         <div className="row">
           {testimonialDatas?.map((testimonial, index) => (
@@ -37,7 +37,7 @@ const TestimonialSection = ({ button = "true" }) => {
         {button === "true" && (
           <div className="zubuz-testimonial-btn">
             <Link className="zubuz-default-btn" href="testimonials">
-              <span>View All Reviews</span>
+              <span>Veja todos os Depoimentos</span>
             </Link>
           </div>
         )}

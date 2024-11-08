@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const BrandLogo = ({ imageSrc }) => {
-  const defaultImageSrc = "/images/logo/logo__h-blue.svg";
+  const defaultImageSrc = "/images/logo/logo.png";
   const logoSrc = imageSrc || defaultImageSrc;
 
   return (

@@ -20,13 +20,13 @@ const SignUpForm = () => {
               </div>
             </div>
             <div className="row">
-              <div className="zubuz-account-field col">
-                <label>RM</label>
-                <input type="text" placeholder="Informe o nome RM" />
+            <div className="zubuz-account-field col">
+                <label>Nome da Mãe ou Pai</label>
+                <input type="text" placeholder="Informe o nome completo (mãe ou pai)" />
               </div>
               <div className="zubuz-account-field col">
                 <label>Telefone</label>
-                <input type="text" placeholder="Informe o número para contato" />
+                <input type="text" placeholder="Informe um número para contato" />
               </div>
             </div>
             <div className="row">
@@ -35,15 +35,27 @@ const SignUpForm = () => {
                 <input type="text" placeholder="Informe o número de CPF" />
               </div>
               <div className="zubuz-account-field col">
-                <label>Ano de Curso</label>
-                <input type="text" placeholder="Informe o ano de conclusão" />
+                <label>Data de Nascimento</label>
+                <input type="text" placeholder="Informe a data de Nascimento" />
+              </div>
+            </div>
+            <div className="row">
+            <div className="zubuz-account-field col">
+              <label>Última Formação</label>
+              <input type="text" placeholder="Informe o tipo de graduação" />
+            </div>
+            <div className="zubuz-account-field col">
+              <label>Ano de Curso</label>
+              <input type="text" placeholder="Informe o ano da última graduação" />
+            </div>
+            </div>
+            <div className="row">
+              <div className="zubuz-account-field col">
+              <label>Linkedin</label>
+              <input type="text" placeholder="Informe o perfil no linkedin" />
               </div>
             </div>
             <div>
-              <div className="zubuz-account-field col">
-                <label>Curso</label>
-                <input type="text" placeholder="Informe o curso" />
-              </div>
             </div>
             <div className="row">
               <div className="zubuz-account-field col">

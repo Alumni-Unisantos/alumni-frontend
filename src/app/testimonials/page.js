@@ -7,7 +7,7 @@ export default function TestimonialPage() {
   return (
     <>
       <HomeHeader />
-      <PageHeader title="Testemunhos" />
+      <PageHeader title="Depoimentos" />
       <Testimonial button="false" />
       <Footer />
     </>
