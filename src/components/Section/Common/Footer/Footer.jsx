@@ -116,22 +116,22 @@ const Footer = () => {
           <div className="zubuz-social-icon order-md-2">
             <ul>
               <li>
-                <a href="https://twitter.com/" target="_blank">
+                <a href="https://x.com/unisantosweb" target="_blank">
                   <FaTwitter />
                 </a>
               </li>
               <li>
-                <a href="https://facebook.com/" target="_blank">
+                <a href="https://www.facebook.com/catolicaunisantos" target="_blank">
                   <FaFacebookF />
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/" target="_blank">
+                <a href="https://www.instagram.com/catolicadesantos/" target="_blank">
                   <FaInstagram />
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/" target="_blank">
+                <a href="https://www.linkedin.com/in/unisantos/" target="_blank">
                   <FaLinkedin />
                 </a>
               </li>
