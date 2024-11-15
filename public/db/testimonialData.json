@@ -1,42 +1,43 @@
 [
   {
     "rating": 5,
-    "title": "Why do we use it?",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "title": "Como a Unisantos fez parte da sua vida?",
+    "description": "A UNISANTOS faz parte da minha vida há 35 anos, desde que cheguei em Santos. Iniciei meu contato com a instituição estudando na biblioteca da faculdade e, há mais de 18 anos, integrei o corpo administrativo. Nesse período, conquistei minha graduação em Administração (2006) e um MBA em Gestão Estratégica de Recursos Humanos (2014), além de diversas realizações profissionais com o apoio dos gestores e da reitoria. Considero a UNISANTOS minha família, onde estão meus amigos e onde tenho grande orgulho em pertencer.",
     "author": {
-      "name": "Jonas Aly",
-      "role": "Founder @ Company",
-      "avatar": "/images/v1/t_user1.png"
+      "name": "RENATA SCHWANTES",
+      "role": "Ex Aluna",
+      "avatar": "/images/v1/genericWomanIcon.png"
     }
   },
   {
     "rating": 5,
-    "title": "Why do we use it?",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "title": "Como a Unisantos transformou sua vida ao longo dos anos? ",
+    "description": "Minha história com a Unisantos começou em 1988, no curso de Jornalismo, onde construí uma base sólida com professores renomados e prática intensa. Durante a faculdade, iniciei minha carreira em rádio e depois em televisão, o que me formou como um jornalista consciente de meu papel social. A Unisantos também possibilitou que eu me tornasse professor universitário, ajudando a formar futuros jornalistas. Após 30 anos de intensa dedicação, sou profundamente grato à universidade, que transformou minha vida e se tornou meu segundo lar.",
     "author": {
-      "name": "Mark Bures",
-      "role": "Businessman",
-      "avatar": "/images/v1/t_user2.png"
+      "name": "Paulo Bornsen",
+      "role": "Ex Aluno",
+      "avatar": "/images/v1/genericManIcon.png"
     }
   },
   {
     "rating": 5,
-    "title": "Why do we use it?",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "title": "Qual é a sua relação com a UNISANTOS e a Atlética CCA?",
+    "description": "É IMPOSSÍVEL FALAR DO MEU NOME SEM RELACIONAR A UNISANTOS, SOU ETERNAMENTE GRATO PELAS PESSOAS QUE CONHECI E TRABALHEI DESDE 2016, O ANO QUE ENTREI. TENHO UMA LIGAÇÃO MUTO FORTE COM A ATLÉTICA CCA DESDE O PRIMEIRO DIA DE AULA, RELAÇÃO DE MÃE COM FILHO, SÓ POSSO AGRADECER!!!",
     "author": {
-      "name": "William Kolas",
-      "role": "Student",
-      "avatar": "/images/v1/t_user3.png"
+      "name": "Guilherme Salvático da Conceição",
+      "role": "Ex Aluno",
+      "avatar": "/images/v1/guilhermeSalvatico.png"
     }
   },
   {
     "rating": 5,
-    "title": "Why do we use it?",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "title": "Como a UNISANTOS influenciou sua jornada acadêmica e profissional?",
+    "description": "A UNISANTOS sempre foi um sonho para mim, desde a graduação, onde me dediquei aos estudos, trocas de ideias e à interação com outros alunos. A docência, assim como o Direito, exige constante reinvenção, o que me motivou a buscar especialização, mestrado e hoje o doutorado. Ser professor nesta instituição é algo indispensável em minha vida, e expresso minha profunda gratidão por fazer parte da UNISANTOS, que se tornou sinônimo de felicidade e realização.",
     "author": {
-      "name": "Andrew Chan",
-      "role": "Manager @ AB Company",
-      "avatar": "/images/v1/t_user4.png"
+      "name": "Mateus Catalani Pirani",
+      "role": "Ex Aluno",
+      "avatar": "/images/v1/genericManIcon.png"
     }
   }
+
 ]

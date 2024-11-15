@@ -1,23 +1,23 @@
 [
   {
-    "category": "Business",
-    "date": "June 18, 2024",
-    "title": "Why do we use it?",
-    "image": "/images/blog/blog1.png",
-    "link": ""
+    "category": "COMEMORAÇÃO",
+    "date": "13 de novembro de 2024",
+    "title": "Homenagens a docentes marcam o início das comemorações dos...",
+    "image": "/images/blog/Homenagem-Rosicler-237x300.png",
+    "link": "https://www.unisantos.br/portal/noticias/jubileu-homenagens-a-docentes-marcam-o-inicio-das-comemoracoes-dos-70-anos-dos-cursos-de-letras-e-pedagogia-e-20-anos-da-pos-graduacao-em-educacao/"
   },
   {
-    "category": "Technology",
-    "date": "June 18, 2024",
-    "title": "What is Lorem Ipsum?",
-    "image": "/images/blog/blog2.png",
-    "link": ""
+    "category": "DIREITO",
+    "date": "11 de novembro de 2024",
+    "title": "Juiz Leonardo Grecco compartilha sua experiência no Tribunal Penal Internacional, em Haia...",
+    "image": "/images/blog/juiz-Leonardo-Grecco-267x300.png",
+    "link": "https://www.unisantos.br/portal/noticias/direito-juiz-leonardo-grecco-compartilha-sua-experiencia-no-tribunal-penal-internacional-em-haia/"
   },
   {
-    "category": "Management",
-    "date": "June 18, 2024",
-    "title": "Where can I get some?",
-    "image": "/images/blog/blog3.png",
-    "link": ""
+    "category": "JUBILEU",
+    "date": "8 de novembro de 2024",
+    "title": "Comemorações pelo Jubileu de Platina do curso de Jornalismo da UNISANTOS têm início com homenagens, missa, assinatura de convênio e palestras",
+    "image": "/images/blog/homenagem-Jose-Reis-768x627.png",
+    "link": "https://www.unisantos.br/portal/noticias/70-anos-comemoracoes-pelo-jubileu-de-platina-do-curso-de-jornalismo-tem-inicio-com-homenagens-missa-assinatura-de-convenio-e-palestras/"
   }
 ]
