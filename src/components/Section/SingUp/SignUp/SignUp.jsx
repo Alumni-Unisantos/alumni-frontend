@@ -47,7 +47,7 @@ const SignUpForm = () => {
             <div className="row">
               <div className="zubuz-account-field col">
                 <label>CPF</label>
-                <input type="text" placeholder="Informe o número de CPF" value="47106542806"/>
+                <input type="text" placeholder="Informe o número de CPF" value="31894872002"/>
               </div>
               <div className="zubuz-account-field col">
                 <label>Data de Nascimento</label>
