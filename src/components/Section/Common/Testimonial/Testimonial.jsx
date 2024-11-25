@@ -34,13 +34,13 @@ const TestimonialSection = ({ button = "true" }) => {
             />
           ))}
         </div>
-        {button === "true" && (
+        {/* {button === "true" && (
           <div className="zubuz-testimonial-btn">
-            <Link className="zubuz-default-btn" href="testimonials">
+            <Link className="zubuz-default-btn" href="testimonial">
               <span>Veja todos os Depoimentos</span>
             </Link>
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );
