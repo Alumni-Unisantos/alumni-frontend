@@ -41,7 +41,7 @@ const SignUpForm = () => {
               </div>
               <div className="zubuz-account-field col">
                 <label>Telefone</label>
-                <input type="text" placeholder="Informe um número para contato" value="13 99604-0376" />
+                <input type="text" placeholder="Informe um número para contato" value="13 99836-5798" />
               </div>
             </div>
             <div className="row">
