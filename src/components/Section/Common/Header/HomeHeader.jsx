@@ -400,10 +400,10 @@ const HomeHeader = ({ logoSrc, roundedBtn }) => {
           </div> */}
 
           <div className="header-btn header-btn-l1 ms-auto d-none d-xs-inline-flex">
-            <Link href="sign-in"
+            <Link href="sign-up"
               className="zubuz-default-btn zubuz-header-btn pill"
             >
-              <span>Login</span>
+              <span>Cadastro</span>
             </Link>
           </div>
         </nav>
