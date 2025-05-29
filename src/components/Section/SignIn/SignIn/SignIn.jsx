@@ -56,7 +56,7 @@ const SignInForm = () => {
           <div className="modal-overlay">
             <div className="modal-content">
               <h3>Funcionalidade em Desenvolvimento!</h3>
-              <Link href="#"><button onClick={closeModal}>Fechar</button></Link>
+              <Link href="feed"><button onClick={closeModal}>Fechar</button></Link>
             </div>
           </div>
         )}
