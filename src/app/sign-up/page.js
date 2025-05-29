@@ -1,10 +1,10 @@
 import SignUpForm from "~/components/Section/SingUp/SignUp/SignUp";
-import HomeHeader from "~/components/Section/Common/Header/HomeHeader";
+import LoginHeader from "~/components/Section/Common/Header/LoginHeader";
 
 export default function SignUpPage() {
   return (
     <>
-      <HomeHeader />
+      <LoginHeader />
       <SignUpForm />
     </>
   );

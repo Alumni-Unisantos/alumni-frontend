@@ -8,12 +8,12 @@ import Footer from "~/components/Section/Common/Footer";
 import HeroSection from "~/components/Section/Home-1/Hero/Hero";
 import NewsSection from "~/components/Section/Home-1/News/News";
 import TestimonialSection from "~/components/Section/Common/Testimonial/Testimonial";
-import HomeHeader from "~/components/Section/Common/Header/HomeHeader";
+import LoginHeader from "~/components/Section/Common/Header/LoginHeader";
 
 export default function Home() {
   return (
     <>
-      <HomeHeader />
+      <LoginHeader />
       <HeroSection />
       {/* <BrandSection /> */}
       {/* <ContentSectionOne />

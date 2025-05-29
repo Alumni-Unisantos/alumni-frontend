@@ -1,10 +1,10 @@
 import SignInForm from "~/components/Section/SignIn/SignIn/SignIn";
-import HomeHeader from "~/components/Section/Common/Header/HomeHeader";
+import LoginHeader from "~/components/Section/Common/Header/LoginHeader";
 
 export default function SignInPage() {
   return (
     <>
-      <HomeHeader />
+      <LoginHeader />
       <SignInForm />
     </>
   );

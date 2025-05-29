@@ -26,8 +26,7 @@ const Feed = () => {
     fetch("http://localhost:8000/api/feed/buscarUltimasPostagens")
       .then(response => response.json())
       .then(data => {
-        const conteudos = data.map(item => item.conteudo);
-        setPostagens(conteudos);
+        setPostagens(data);
       })
       .catch(error => {
         console.error('Erro:', error);
@@ -55,7 +54,7 @@ const Feed = () => {
           inputRef.current.innerHTML = "";
         }
         
-        setPostagens([data.conteudo, ...postagens]);
+        setPostagens([data, ...postagens]);
     })
     .catch(error => {
       console.error("Erro:", error);
@@ -92,14 +91,17 @@ const Feed = () => {
             </div>
           </div>
       </div>
-      {postagens.map((element, index) => (
+      {postagens.map((postagem, index) => (
         <div className="card" key={index}>
           <div className="card-content">
             <div className="card-header">
-              <img className="card-profile-image" src="/images/mock/ImagemPerfil1.png" alt="imagem Perfil" />
+              <img className="card-profile-image" src="/images/mock/anonimo.png" alt="imagem Perfil" />
               Teste da Silva
             </div>
-            <div className="card-body" dangerouslySetInnerHTML={{ __html: element }}></div>
+            <div className="card-body" dangerouslySetInnerHTML={{ __html: postagem.conteudo }}></div>
+            <div className="card-footer">
+              <small>{new Date(postagem.dataPostagem).toLocaleString()}</small>
+            </div>
           </div>
         </div>
       ))}

@@ -1,10 +1,10 @@
 import ResetPasswordForm from "~/components/Section/ResetPassword/ResetPassword/ResetPassword";
-import HomeHeader from "~/components/Section/Common/Header/HomeHeader";
+import LoginHeader from "~/components/Section/Common/Header/LoginHeader";
 
 export default function ResetPasswordPage() {
   return (
     <>
-      <HomeHeader />
+      <LoginHeader />
       <ResetPasswordForm />;
     </>
   );

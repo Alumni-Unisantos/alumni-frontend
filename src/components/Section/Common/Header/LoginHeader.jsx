@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { FaAngleDown, FaAngleLeft } from "react-icons/fa";
 import BrandLogo from "~/components/Ui/Logo/BrandLogo";
 
-const HomeHeader = ({ logoSrc, roundedBtn }) => {
+const LoginHeader = ({ logoSrc, roundedBtn }) => {
   const [isActive, setIsActive] = useState(false);
   const [subMenuArray, setSubMenuArray] = useState([]);
   const [subMenuTextArray, setSubMenuTextArray] = useState([]);
@@ -398,10 +398,18 @@ const HomeHeader = ({ logoSrc, roundedBtn }) => {
               </ul>
             </nav>
           </div> */}
+
+          <div className="header-btn header-btn-l1 ms-auto d-none d-xs-inline-flex">
+            <Link href="sign-up"
+              className="zubuz-default-btn zubuz-header-btn pill"
+            >
+              <span>Cadastro</span>
+            </Link>
+          </div>
         </nav>
       </div>
     </header>
   );
 };
 
-export default HomeHeader;
+export default LoginHeader;

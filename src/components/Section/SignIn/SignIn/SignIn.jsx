@@ -4,17 +4,16 @@ import Link from "next/link";
 
 const SignInForm = () => {
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  // const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Exibir a modal após o envio do formulário
-    setIsModalOpen(true);
+    window.location.href = '/feed';
   };
 
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
+  // const closeModal = () => {
+  //   setIsModalOpen(false);
+  // };
 
 
   return (
@@ -51,15 +50,6 @@ const SignInForm = () => {
             </div>
           </form>
         </div>
-                 {/* Modal personalizada */}
-                 {isModalOpen && (
-          <div className="modal-overlay">
-            <div className="modal-content">
-              <h3>Funcionalidade em Desenvolvimento!</h3>
-              <Link href="feed"><button onClick={closeModal}>Fechar</button></Link>
-            </div>
-          </div>
-        )}
       </div>
             {/* Estilos para a modal */}
             <style jsx>{`
