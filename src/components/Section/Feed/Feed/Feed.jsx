@@ -45,7 +45,7 @@ const Feed = () => {
       },
       body: JSON.stringify({
         conteudo: content,
-        userId: '123'
+        userId: '1'
       }),
     })
     .then(response => response.json())
