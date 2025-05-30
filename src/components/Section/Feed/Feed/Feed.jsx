@@ -71,6 +71,26 @@ const Feed = () => {
     });
   };
 
+  const formatarDataHoraBrasileira = (isoString) => {
+    const data = new Date(isoString);
+
+    const hora = new Intl.DateTimeFormat("pt-BR", {
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: true,
+      timeZone: "America/Sao_Paulo"
+    }).format(data);
+
+    const dataFormatada = new Intl.DateTimeFormat("pt-BR", {
+      day: "2-digit",
+      month: "2-digit",
+      year: "numeric",
+      timeZone: "America/Sao_Paulo"
+    }).format(data);
+
+    return `${hora} · ${dataFormatada}`;
+  };
+
   return (
     <div className="section zubuz-extra-section">
       <div className="container">
@@ -113,18 +133,7 @@ const Feed = () => {
             </div>
             <div className="card-body" dangerouslySetInnerHTML={{ __html: postagem.conteudo }}></div>
             <div className="card-postagem-footer">
-              <small>
-                {new Intl.DateTimeFormat("pt-BR", {
-                  hour: "numeric",
-                  minute: "numeric",
-                  hour12: true,
-                }).format(new Date(postagem.dataPostagem))} ·{" "}
-                {new Intl.DateTimeFormat("pt-BR", {
-                  day: "numeric",
-                  month: "numeric",
-                  year: "numeric",
-                }).format(new Date(postagem.dataPostagem))}
-              </small>
+              <small>{formatarDataHoraBrasileira(postagem.dataPostagem)}</small>
             </div>
           </div>
         </div>
