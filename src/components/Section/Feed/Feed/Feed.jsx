@@ -15,11 +15,21 @@ const Feed = () => {
   };
 
   const handleClickTextArea = () => {
+    setIsFocused(true);
     setTextAreaHeight("200");
+
+    if (inputRef.current && inputRef.current.innerHTML === "Digite aqui...") {
+      inputRef.current.innerHTML = "";
+    }
   }
 
   const handleClickOutTextArea = () => {
-    setTextAreaHeight("50");
+    setIsFocused(false);
+    setTextAreaHeight("120");
+
+    if (inputRef.current && inputRef.current.innerHTML.trim() === "") {
+      inputRef.current.innerHTML = "Digite aqui...";
+    }
   }
 
   const buscarPostagens = () => {
@@ -72,7 +82,9 @@ const Feed = () => {
           <label>Novo Post</label>
           <div 
             className={`textarea-container ${isFocused ? 'focused' : ''}`} 
-            onClick={() => setIsFocused(true)} 
+            onClick={() => setIsFocused(true)}  
+            onFocus={handleClickTextArea}
+            onBlur={handleClickOutTextArea}
           >
             
             <div
@@ -82,31 +94,46 @@ const Feed = () => {
               ref={inputRef}
               suppressContentEditableWarning={true}
             >
+              Digite aqui...
             </div>
 
             <div className="submit-container">
-              <div className="submit-button" onClick={handleSubmitPost}>
+              <div className="submit-button" onMouseDown={(e) => e.preventDefault()} onClick={handleSubmitPost}>
                 <span className="submit-text">Enviar</span>
               </div>
             </div>
           </div>
       </div>
       {postagens.map((postagem, index) => (
-        <div className="card" key={index}>
-          <div className="card-content">
-            <div className="card-header">
-              <img className="card-profile-image" src="/images/mock/anonimo.png" alt="imagem Perfil" />
-              Teste da Silva
+        <div className="card-postagem" key={index}>
+          <div className="card-postagem-content">
+            <div className="card-postagem-header">
+              <img className="card-profile-image" src="/images/v1/genericManIcon.png" alt="imagem Perfil" />
+              Nome do Usuário
             </div>
             <div className="card-body" dangerouslySetInnerHTML={{ __html: postagem.conteudo }}></div>
-            <div className="card-footer">
-              <small>{new Date(postagem.dataPostagem).toLocaleString()}</small>
+            <div className="card-postagem-footer">
+              <small>
+                {new Intl.DateTimeFormat("pt-BR", {
+                  hour: "numeric",
+                  minute: "numeric",
+                  hour12: true,
+                }).format(new Date(postagem.dataPostagem))} ·{" "}
+                {new Intl.DateTimeFormat("pt-BR", {
+                  day: "numeric",
+                  month: "numeric",
+                  year: "numeric",
+                }).format(new Date(postagem.dataPostagem))}
+              </small>
             </div>
           </div>
         </div>
       ))}
 
       <style jsx>{`
+        h2 {
+        color:#00225C; 
+        }
         .modal-overlay {
           position: fixed;
           top: 0;
@@ -155,7 +182,7 @@ const Feed = () => {
         }
         .textarea-container {
           border: 1px solid #ccc;
-          border-radius: 8px;
+          border-radius: 10px;
           padding: 10px;
           transition: border-color 0.2s, box-shadow 0.2s;
           width: 50%;
@@ -171,11 +198,13 @@ const Feed = () => {
         }
 
         .textarea-input {
-          min-height: 100px;
+          min-height: 120px;
           outline: none;
           border: none;
           padding: 8px;
           font-size: 16px;
+          height: ${textAreaHeight}px;
+          overflow-y: auto;
         }
 
         .submit-container {
@@ -184,7 +213,7 @@ const Feed = () => {
         }
 
         .submit-button {
-          background-color: blue;
+          background-color: #00225C;
           color: white;
           font-weight: bold;
           padding: 5px 15px;
@@ -198,8 +227,7 @@ const Feed = () => {
           background-color: darkblue;
         }
 
-
-        .card {
+        .card-postagem {
           display: flex;
           justify-content:center;
           align-items: center;
@@ -207,24 +235,45 @@ const Feed = () => {
           border: 0;
           margin-bottom: 20px;
         }
-        .card-content {
+        .card-postagem-content {
           width: 50%;
-          border: black solid 1px;
           text-align: justify;
-          padding: 10px 20px;
           font-size: 16px;
-          border-radius: 1%;
+          border-radius: 10px;
+          margin-top: 20px;
         }
-        .card-header {
+        .card-postagem-header {
           display: flex;
           align-items: center;
+          padding: 10px 20px;
+          font-weight: bold;
+          background-color: #00225C;
+          color: white;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          border-top: 1px solid #000;
         }
         .card-profile-image {
-          width: 60px;
+          width: 40px;
           border-radius: 50%;
-          margin-right: 20px; 
+          margin-right: 10px; 
         }
         .card-body {
+          padding: 15px 20px;
+          border-left: 1px solid #000;
+          border-right: 1px solid #000;
+          background-color: white;
+        }
+        .card-postagem-footer {
+          text-align: right;
+          font-size: 14px;
+          color: gray;
+          padding: 10px 20px;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          border-bottom: 1px solid #000;
+          border-left: 1px solid #000;
+          border-right: 1px solid #000;
         }
       `}</style>
     </div>
