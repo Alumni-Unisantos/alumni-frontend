@@ -3,6 +3,7 @@ import "~/assets/css/bootstrap.min.css";
 import "~/assets/css/app.css";
 import "~/assets/css/main.css";
 import "~/assets/css/react-adjustment.css";
+import UserProvider from "~/components/Section/UserProvider/UserProvider";
 
 export const inter = Inter({
   subsets: ["latin"],
@@ -29,7 +30,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${raleway.variable}`}>{children}</body>
+      <body className={`${inter.variable} ${raleway.variable}`}>
+        <UserProvider>
+          {children}
+        </UserProvider>
+      </body>
     </html>
   );
 }

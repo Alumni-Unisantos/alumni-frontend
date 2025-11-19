@@ -1,9 +1,10 @@
 "use client";
-import { useRef, useState, useEffect } from "react";
-import Link from "next/link";
+import { useRef, useState, useEffect, useContext } from "react";
+import UserContext from "~/contexts/UserContext";
 
 const Feed = () => {
   
+  const {user, setUser} = useContext(UserContext);
   const [textAreaHeight, setTextAreaHeight] = useState("60");
   const inputRef = useRef(null);
   const [isFocused, setIsFocused] = useState(false);
@@ -36,6 +37,9 @@ const Feed = () => {
     fetch("http://localhost:8000/api/feed/buscarUltimasPostagens")
       .then(response => response.json())
       .then(data => {
+
+        console.log(data);
+
         setPostagens(data);
       })
       .catch(error => {
@@ -55,7 +59,7 @@ const Feed = () => {
       },
       body: JSON.stringify({
         conteudo: content,
-        userId: '1'
+        userId: user.id
       }),
     })
     .then(response => response.json())
@@ -129,7 +133,7 @@ const Feed = () => {
           <div className="card-postagem-content">
             <div className="card-postagem-header">
               <img className="card-profile-image" src="/images/v1/genericManIcon.png" alt="imagem Perfil" />
-              Nome do Usuário
+              {postagem.nm_user}
             </div>
             <div className="card-body" dangerouslySetInnerHTML={{ __html: postagem.conteudo }}></div>
             <div className="card-postagem-footer">

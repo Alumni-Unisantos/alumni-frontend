@@ -399,12 +399,21 @@ const LoginHeader = ({ logoSrc, roundedBtn }) => {
             </nav>
           </div> */}
 
-          <div className="header-btn header-btn-l1 ms-auto d-none d-xs-inline-flex">
-            <Link href="sign-up"
-              className="zubuz-default-btn zubuz-header-btn pill"
-            >
-              <span>Cadastro</span>
-            </Link>
+          <div className="d-flex ms-auto"> {/* Contêiner pai com Flexbox e alinhamento à direita */}
+            <div className="header-btn header-btn-l1 d-none d-xs-inline-flex"> {/* Removido ms-auto */}
+                <Link href="sign-up"
+                    className="zubuz-default-btn zubuz-header-btn pill"
+                >
+                    <span>Cadastro</span>
+                </Link>
+            </div>
+            <div className="header-btn header-btn-l1 d-none d-xs-inline-flex ms-3"> {/* Removido ms-auto, adicionei ms-3 para um pequeno espaço entre os botões */}
+                <Link href="sign-in"
+                    className="zubuz-default-btn zubuz-header-btn pill"
+                >
+                    <span>Login</span>
+                </Link>
+            </div>
           </div>
         </nav>
       </div>
